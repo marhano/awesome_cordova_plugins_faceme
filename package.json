@@ -1,0 +1,23 @@
+{
+  "name": "@awesome-cordova-plugins/face-me",
+  "version": "1.0.0",
+  "description": "faceme native ionic plugin",
+  "main": "bundle.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marhano/cordova_plugin_faceme.git"
+  },
+  "keywords": [
+    "faceme"
+  ],
+  "author": "marhano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marhano/cordova_plugin_faceme/issues"
+  },
+  "homepage": "https://github.com/marhano/cordova_plugin_faceme#readme"
+}
