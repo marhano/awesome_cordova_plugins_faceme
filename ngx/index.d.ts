@@ -22,12 +22,18 @@ import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
  */
 export declare class FaceMe extends AwesomeCordovaNativePlugin {
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     *
      * @return {Promise<any>} Returns a promise that resolves when something happens
      */
     testPlugin(): Promise<any>;
+    /**
+     *
+     * @returns
+     */
     initializeSDK(): Promise<any>;
-    extractFace(base64Image: string): Promise<any>;
+    getBase64Image(base64Image: string): Promise<any>;
+    getBitmapImage(pixelData: number[]): Promise<any>;
+    getBoundingBox(): Promise<any>;
+    activateLicense(): Promise<any>;
+    deactivateLicense(): Promise<any>;
 }
