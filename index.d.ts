@@ -36,6 +36,9 @@ export declare class FaceMeOriginal extends AwesomeCordovaNativePlugin {
     getBoundingBox(): Promise<any>;
     activateLicense(): Promise<any>;
     deactivateLicense(): Promise<any>;
+    detectFace(base64Image: string): Promise<any>;
+    enrollFace(username: string, faceHolder: any): Promise<any>;
+    recognizeFace(): Promise<any>;
 }
 
 export declare const FaceMe: FaceMeOriginal;
