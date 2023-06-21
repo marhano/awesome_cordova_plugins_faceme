@@ -30,14 +30,14 @@ var FaceMe = /** @class */ (function (_super) {
     }
     FaceMe.prototype.testPlugin = function () { return core.cordova(this, "testPlugin", {}, arguments); };
     FaceMe.prototype.initializeSDK = function () { return core.cordova(this, "initializeSDK", {}, arguments); };
-    FaceMe.prototype.getBase64Image = function (base64Image) { return core.cordova(this, "getBase64Image", {}, arguments); };
-    FaceMe.prototype.getBitmapImage = function (pixelData) { return core.cordova(this, "getBitmapImage", {}, arguments); };
-    FaceMe.prototype.getBoundingBox = function () { return core.cordova(this, "getBoundingBox", {}, arguments); };
     FaceMe.prototype.activateLicense = function () { return core.cordova(this, "activateLicense", {}, arguments); };
     FaceMe.prototype.deactivateLicense = function () { return core.cordova(this, "deactivateLicense", {}, arguments); };
     FaceMe.prototype.detectFace = function (base64Image) { return core.cordova(this, "detectFace", {}, arguments); };
-    FaceMe.prototype.enrollFace = function (username, faceHolder) { return core.cordova(this, "enrollFace", {}, arguments); };
+    FaceMe.prototype.enrollFace = function (username) { return core.cordova(this, "enrollFace", {}, arguments); };
     FaceMe.prototype.recognizeFace = function () { return core.cordova(this, "recognizeFace", {}, arguments); };
+    FaceMe.prototype.deleteFace = function (faceId) { return core.cordova(this, "deleteFace", {}, arguments); };
+    FaceMe.prototype.updateFace = function () { return core.cordova(this, "updateFace", {}, arguments); };
+    FaceMe.prototype.selectFace = function () { return core.cordova(this, "selectFace", {}, arguments); };
     FaceMe.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     FaceMe.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe });
     FaceMe.pluginName = "FaceMe";
@@ -52,6 +52,6 @@ var FaceMe = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { testPlugin: [], initializeSDK: [], getBase64Image: [], getBitmapImage: [], getBoundingBox: [], activateLicense: [], deactivateLicense: [], detectFace: [], enrollFace: [], recognizeFace: [] } });
+        }], propDecorators: { testPlugin: [], initializeSDK: [], activateLicense: [], deactivateLicense: [], detectFace: [], enrollFace: [], recognizeFace: [], deleteFace: [], updateFace: [], selectFace: [] } });
 
 exports.FaceMe = FaceMe;
