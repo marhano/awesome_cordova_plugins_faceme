@@ -39,6 +39,7 @@ export declare class FaceMeOriginal extends AwesomeCordovaNativePlugin {
     deleteFace(faceId: number): Promise<any>;
     updateFace(): Promise<any>;
     selectFace(): Promise<any>;
+    addFace(): Promise<any>;
 }
 
 export declare const FaceMe: FaceMeOriginal;

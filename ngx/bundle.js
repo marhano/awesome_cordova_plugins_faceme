@@ -38,6 +38,7 @@ var FaceMe = /** @class */ (function (_super) {
     FaceMe.prototype.deleteFace = function (faceId) { return core.cordova(this, "deleteFace", {}, arguments); };
     FaceMe.prototype.updateFace = function () { return core.cordova(this, "updateFace", {}, arguments); };
     FaceMe.prototype.selectFace = function () { return core.cordova(this, "selectFace", {}, arguments); };
+    FaceMe.prototype.addFace = function () { return core.cordova(this, "addFace", {}, arguments); };
     FaceMe.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     FaceMe.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe });
     FaceMe.pluginName = "FaceMe";
@@ -52,6 +53,6 @@ var FaceMe = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { testPlugin: [], initializeSDK: [], activateLicense: [], deactivateLicense: [], detectFace: [], enrollFace: [], recognizeFace: [], deleteFace: [], updateFace: [], selectFace: [] } });
+        }], propDecorators: { testPlugin: [], initializeSDK: [], activateLicense: [], deactivateLicense: [], detectFace: [], enrollFace: [], recognizeFace: [], deleteFace: [], updateFace: [], selectFace: [], addFace: [] } });
 
 exports.FaceMe = FaceMe;
