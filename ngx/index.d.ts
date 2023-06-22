@@ -34,10 +34,10 @@ export declare class FaceMe extends AwesomeCordovaNativePlugin {
     activateLicense(): Promise<any>;
     deactivateLicense(): Promise<any>;
     detectFace(base64Image: string): Promise<any>;
-    enrollFace(username: string): Promise<any>;
+    enrollFace(): Promise<any>;
     recognizeFace(): Promise<any>;
     deleteFace(faceId: number): Promise<any>;
     updateFace(): Promise<any>;
     selectFace(): Promise<any>;
-    addFace(): Promise<any>;
+    addFace(username: string): Promise<any>;
 }
