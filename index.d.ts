@@ -40,6 +40,8 @@ export declare class FaceMeOriginal extends AwesomeCordovaNativePlugin {
     updateFace(): Promise<any>;
     selectFace(): Promise<any>;
     addFace(username: string): Promise<any>;
+    startAntiSpoofing(): Promise<any>;
+    stopAntiSpoofing(): Promise<any>;
 }
 
 export declare const FaceMe: FaceMeOriginal;
