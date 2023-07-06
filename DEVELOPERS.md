@@ -102,7 +102,7 @@ To update your wrapper, follow these steps:
 
 ## 🧪 Testing with an Ionic Project
 
-To test your wrapper with an Ionic project, import the plugin to `app.module.ts`:
+To test your wrapper with an Ionic project, first install awesome cordova core `npm install @awesome-cordova-plugins/core`, import the plugin to `app.module.ts`:
 
 ```typescript
 import { PluginName } from '@awesome-cordova-plugins/plugin-name/ngx';
