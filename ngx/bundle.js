@@ -30,7 +30,7 @@ var FaceMe = /** @class */ (function (_super) {
     }
     FaceMe.prototype.testPlugin = function () { return core.cordova(this, "testPlugin", {}, arguments); };
     FaceMe.prototype.initializeSDK = function () { return core.cordova(this, "initializeSDK", {}, arguments); };
-    FaceMe.prototype.activateLicense = function () { return core.cordova(this, "activateLicense", {}, arguments); };
+    FaceMe.prototype.activateLicense = function (licenseKey) { return core.cordova(this, "activateLicense", {}, arguments); };
     FaceMe.prototype.deactivateLicense = function () { return core.cordova(this, "deactivateLicense", {}, arguments); };
     FaceMe.prototype.detectFace = function (base64Image) { return core.cordova(this, "detectFace", {}, arguments); };
     FaceMe.prototype.enrollFace = function (base64Image) { return core.cordova(this, "enrollFace", {}, arguments); };
