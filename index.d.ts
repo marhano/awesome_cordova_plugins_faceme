@@ -30,7 +30,7 @@ export declare class FaceMeOriginal extends AwesomeCordovaNativePlugin {
       * Initializes the Face Me SDK.
       * @returns {Promise<any>} Returns a promise that resolves when the SDK is initialized.
       */
-    initializeSDK(): Promise<any>;
+    initializeSDK(licenseKey: String): Promise<any>;
     /**
       * Activates the Face Me license.
       * @returns {Promise<any>} Returns a promise that resolves when the license is activated.
