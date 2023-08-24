@@ -1,4 +1,49 @@
 import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
+export interface AntiSpoofingOptions {
+    frameActiveColor: string;
+    frameIdleColor: string;
+    frameBorderWidth: number;
+    showFrame: boolean;
+    circleActiveColor: string;
+    circleIdleColor: string;
+    circleBorderWidth: number;
+    actionDetailHintActiveColor: string;
+    actionDetailHintIdleColor: string;
+    actionDetailHintFont: number;
+    actionHintColor: string;
+    actionHintFont: number;
+    progressBarForegroundColor: string;
+    progressBarBackgroundColor: string;
+    progressBarWidth: number;
+    progressBarHeight: number;
+    footerTitleColor: string;
+    footerTitleFont: number;
+    footerTitleFontSize: number;
+    footerSubtitleColor: string;
+    footerSubtitleFont: number;
+    footerSubtitleFontSize: number;
+    showFooter: boolean;
+    userActionHintColor: string;
+    userActionHintFont: number;
+    userActionHintFontSize: number;
+    showUserActionSteps: boolean;
+    speechNumberActiveColor: string;
+    speechNumberIdleColor: string;
+    speechNumberFont: number;
+    speechNumberFontSize: number;
+    speechLanguageColor: string;
+    speechLanguageFont: number;
+    speechLanguageBackgroundColor: string;
+    showSpeechLanguage: boolean;
+    alertDistanceToCircle: number;
+    alertBackgroundColor: string;
+    alertTitleColor: string;
+    alertTitleFont: number;
+    alertTitleFontSize: number;
+    alertDescriptionColor: string;
+    alertDescriptionFont: number;
+    alertDescriptionFontSize: number;
+}
 /**
  * @name Face Me
  * @description
@@ -84,7 +129,7 @@ export declare class FaceMe extends AwesomeCordovaNativePlugin {
       * Starts the anti-spoofing process.
       * @returns {Promise<any>} Returns a promise that resolves when the anti-spoofing process is started.
       */
-    startAntiSpoofing(): Promise<any>;
+    startAntiSpoofing(option: AntiSpoofingOptions): Promise<any>;
     /**
       * Stops the anti-spoofing process.
       * @returns {Promise<any>} Returns a promise that resolves when the anti-spoofing process is stopped.
