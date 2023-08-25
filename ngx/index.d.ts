@@ -1,5 +1,6 @@
 import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
 export interface AntiSpoofingOptions {
+    showFPS: boolean;
     frameActiveColor: string;
     frameIdleColor: string;
     frameBorderWidth: number;
@@ -9,39 +10,39 @@ export interface AntiSpoofingOptions {
     circleBorderWidth: number;
     actionDetailHintActiveColor: string;
     actionDetailHintIdleColor: string;
-    actionDetailHintFont: number;
+    actionDetailHintFont: string;
     actionHintColor: string;
-    actionHintFont: number;
+    actionHintFont: string;
     progressBarForegroundColor: string;
     progressBarBackgroundColor: string;
     progressBarWidth: number;
     progressBarHeight: number;
     footerTitleColor: string;
-    footerTitleFont: number;
+    footerTitleFont: string;
     footerTitleFontSize: number;
     footerSubtitleColor: string;
-    footerSubtitleFont: number;
+    footerSubtitleFont: string;
     footerSubtitleFontSize: number;
     showFooter: boolean;
     userActionHintColor: string;
-    userActionHintFont: number;
+    userActionHintFont: string;
     userActionHintFontSize: number;
     showUserActionSteps: boolean;
     speechNumberActiveColor: string;
     speechNumberIdleColor: string;
-    speechNumberFont: number;
+    speechNumberFont: string;
     speechNumberFontSize: number;
     speechLanguageColor: string;
-    speechLanguageFont: number;
+    speechLanguageFont: string;
     speechLanguageBackgroundColor: string;
     showSpeechLanguage: boolean;
     alertDistanceToCircle: number;
     alertBackgroundColor: string;
     alertTitleColor: string;
-    alertTitleFont: number;
+    alertTitleFont: string;
     alertTitleFontSize: number;
     alertDescriptionColor: string;
-    alertDescriptionFont: number;
+    alertDescriptionFont: string;
     alertDescriptionFontSize: number;
 }
 /**
