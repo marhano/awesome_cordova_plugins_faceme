@@ -1,4 +1,52 @@
 import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
+export interface AntiSpoofingOptions {
+    showFPS?: boolean;
+    frameActiveColor?: string;
+    frameIdleColor?: string;
+    frameBorderWidth?: number;
+    showFrame?: boolean;
+    circleActiveColor?: string;
+    circleIdleColor?: string;
+    circleBorderWidth?: number;
+    actionDetailHintActiveColor?: string;
+    actionDetailHintIdleColor?: string;
+    actionDetailHintFont?: string;
+    actionDetailHintFontSize?: number;
+    actionHintColor?: string;
+    actionHintFont?: string;
+    actionHintFontSize?: number;
+    progressBarForegroundColor?: string;
+    progressBarBackgroundColor?: string;
+    progressBarWidth?: number;
+    progressBarHeight?: number;
+    footerTitleColor?: string;
+    footerTitleFont?: string;
+    footerTitleFontSize?: number;
+    footerSubtitleColor?: string;
+    footerSubtitleFont?: string;
+    footerSubtitleFontSize?: number;
+    showFooter?: boolean;
+    userActionHintColor?: string;
+    userActionHintFont?: string;
+    userActionHintFontSize?: number;
+    showUserActionSteps?: boolean;
+    speechNumberActiveColor?: string;
+    speechNumberIdleColor?: string;
+    speechNumberFont?: string;
+    speechNumberFontSize?: number;
+    speechLanguageColor?: string;
+    speechLanguageFont?: string;
+    speechLanguageBackgroundColor?: string;
+    showSpeechLanguage?: boolean;
+    alertDistanceToCircle?: number;
+    alertBackgroundColor?: string;
+    alertTitleColor?: string;
+    alertTitleFont?: string;
+    alertTitleFontSize?: number;
+    alertDescriptionColor?: string;
+    alertDescriptionFont?: string;
+    alertDescriptionFontSize?: number;
+}
 /**
  * @name Face Me
  * @description
@@ -30,12 +78,12 @@ export declare class FaceMe extends AwesomeCordovaNativePlugin {
       * Initializes the Face Me SDK.
       * @returns {Promise<any>} Returns a promise that resolves when the SDK is initialized.
       */
-    initializeSDK(): Promise<any>;
+    initializeSDK(licenseKey: String): Promise<any>;
     /**
       * Activates the Face Me license.
       * @returns {Promise<any>} Returns a promise that resolves when the license is activated.
       */
-    activateLicense(): Promise<any>;
+    activateLicense(licenseKey: string): Promise<any>;
     /**
       * Deactivates the Face Me license.
       * @returns {Promise<any>} Returns a promise that resolves when the license is deactivated.
@@ -84,7 +132,7 @@ export declare class FaceMe extends AwesomeCordovaNativePlugin {
       * Starts the anti-spoofing process.
       * @returns {Promise<any>} Returns a promise that resolves when the anti-spoofing process is started.
       */
-    startAntiSpoofing(): Promise<any>;
+    startAntiSpoofing(option: AntiSpoofingOptions): Promise<any>;
     /**
       * Stops the anti-spoofing process.
       * @returns {Promise<any>} Returns a promise that resolves when the anti-spoofing process is stopped.
