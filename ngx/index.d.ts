@@ -1,5 +1,8 @@
 import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
+import { Observable } from 'rxjs';
 export interface AntiSpoofingOptions {
+    faceEnroll: boolean;
+    faceDetection: boolean;
     showFPS?: boolean;
     frameActiveColor?: string;
     frameIdleColor?: string;
@@ -132,7 +135,7 @@ export declare class FaceMe extends AwesomeCordovaNativePlugin {
       * Starts the anti-spoofing process.
       * @returns {Promise<any>} Returns a promise that resolves when the anti-spoofing process is started.
       */
-    startAntiSpoofing(option: AntiSpoofingOptions): Promise<any>;
+    startAntiSpoofing(option: AntiSpoofingOptions): Observable<any>;
     /**
       * Stops the anti-spoofing process.
       * @returns {Promise<any>} Returns a promise that resolves when the anti-spoofing process is stopped.
