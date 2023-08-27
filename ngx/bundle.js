@@ -3,7 +3,6 @@
 var tslib = require('tslib');
 var i0 = require('@angular/core');
 var core = require('@awesome-cordova-plugins/core');
-require('rxjs');
 
 function _interopNamespaceDefault(e) {
     var n = Object.create(null);
@@ -40,7 +39,7 @@ var FaceMe = /** @class */ (function (_super) {
     FaceMe.prototype.updateFace = function () { return core.cordova(this, "updateFace", {}, arguments); };
     FaceMe.prototype.selectFace = function () { return core.cordova(this, "selectFace", {}, arguments); };
     FaceMe.prototype.addFace = function (username) { return core.cordova(this, "addFace", {}, arguments); };
-    FaceMe.prototype.startAntiSpoofing = function (option) { return core.cordova(this, "startAntiSpoofing", { "observable": true }, arguments); };
+    FaceMe.prototype.startAntiSpoofing = function (option) { return core.cordova(this, "startAntiSpoofing", {}, arguments); };
     FaceMe.prototype.stopAntiSpoofing = function () { return core.cordova(this, "stopAntiSpoofing", {}, arguments); };
     FaceMe.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     FaceMe.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.16", ngImport: i0__namespace, type: FaceMe });
